@@ -71,4 +71,19 @@ PRs run tests and deploy -> copy deploy preview URLs for any changed components/
 - **Render components consistently** to mitigate variability
 
 #### Visual Tests
-- snapshots - using Chromatic
+- snapshots - using Chromatic (captures a baseline image of every story)
+`yarn add --dev storybook-chromatic`
+`yarn chromatic test --app-code=<app-code>`
+
+Add to config.yml for CircleCI:
+```yml
+ - run: yarn chromatic test --app-code=<app-code> --exit-zero-on-changes`
+ ```
+Add script:
+```json
+{
+  "scripts": {
+    "chromatic": "CHROMATIC_APP_CODE=<app-code> chromatic"
+  }
+}
+```
