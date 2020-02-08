@@ -59,3 +59,8 @@ e.g. via Netlify:
 `storybook-static` (publish directory)
 
 PRs run tests and deploy -> copy deploy preview URLs for any changed components/stories and add to your PR description so others can see what's up!
+
+### Test Strategy
+- balance comprehensive coverage, straightforward setup, & low maintenance.
+>Design systems are composed of UI components. Each UI component includes stories (permutations) that describe the intended look and feel given a set of inputs (props). Stories are then rendered by a browser or device for the end-user.
+- from [Storybook](https://www.learnstorybook.com/design-systems-for-developers/react/en/test/)
