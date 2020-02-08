@@ -87,3 +87,20 @@ Add script:
   }
 }
 ```
+
+#### Unit Tests
+>Unit tests verify whether the UI code returns the correct output given a controlled input. They live alongside the component and help you validate specific functionality.
+
+- avoid too many - can be cumbersome
+
+#### Accessibility Tests
+c.15% of the population has disabilities
+`yarn add --dev @storybook/addon-a11y` & register in `addons.js`
+```javascript
+import '@storybook/addon-a11y/register';
+```
+- add to `config.js`:
+```javascript
+import { withA11y } from '@storybook/addon-a11y';
+addDecorator(withA11y);
+```
