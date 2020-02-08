@@ -64,3 +64,11 @@ PRs run tests and deploy -> copy deploy preview URLs for any changed components/
 - balance comprehensive coverage, straightforward setup, & low maintenance.
 >Design systems are composed of UI components. Each UI component includes stories (permutations) that describe the intended look and feel given a set of inputs (props). Stories are then rendered by a browser or device for the end-user.
 - from [Storybook](https://www.learnstorybook.com/design-systems-for-developers/react/en/test/)
+
+### Best practices:
+- **Articulate supported component states as stories** to clarify which combinations of inputs yields a given state
+
+- **Render components consistently** to mitigate variability
+
+#### Visual Tests
+- snapshots - using Chromatic
