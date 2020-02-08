@@ -120,7 +120,6 @@ export function Avatar({ loading, username, src, size, ...props }) {
       </Initial>
     );
   }
-
   return (
     <Image size={size} loading={loading} src={src} {...a11yProps} {...props}>
       {avatarFigure}
