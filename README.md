@@ -104,3 +104,13 @@ import '@storybook/addon-a11y/register';
 import { withA11y } from '@storybook/addon-a11y';
 addDecorator(withA11y);
 ```
+
+### Document for Stakeholders
+Ideal world:
+- up-to-date
+- easy tools e.g. markdown
+- easy to maintain e.g. with boilerplate
+- customisable where needed
+From [Storybook](https://www.learnstorybook.com/design-systems-for-developers/react/en/document/)
+
+`yarn add --dev @storybook/addon-docs` & add to `addons.js`
