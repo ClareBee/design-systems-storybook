@@ -57,3 +57,5 @@ Deploy for review = ensures shared experience vs divergences on localhost
 e.g. via Netlify:
 `yarn build-storybook` (build command)
 `storybook-static` (publish directory)
+
+PRs run tests and deploy -> copy deploy preview URLs for any changed components/stories and add to your PR description so others can see what's up!
