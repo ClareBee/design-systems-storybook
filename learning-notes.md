@@ -211,3 +211,76 @@ e.g. via npm
 e.g. w `yarn init --a` (initialises the package for publication)
 
 #### Release management with Auto
+Auto: https://intuit.github.io/auto/pages/getting-started.html
+>Automated releases powered by pull request labels. Streamline your release workflow and publish constantly!
+
+`yarn add --dev auto`
+
+In your `.env`:
+```
+GH_TOKEN=<value from GitHub>
+NPM_TOKEN=<value from npm> (https://www.npmjs.com/settings/%3Cyour-username%3E/tokens)
+```
+- Use Auto to create labels on GitHub:
+`yarn auto create-labels`
+- Tag all future PRs w one of the labels: major, minor, patch, skip-release, prerelease, internal, documentation before merging
+- `yarn auto changelog` - w every commit so far
+```
+git add CHANGELOG.md
+git commit -m "Changelog for v0.1.0 [skip ci]"
+npm version 0.1.0 -m "Bump version to: %s [skip ci]"
+npm publish
+```
+- Use Auto to create a release on GitHub:
+```
+git push --follow-tags origin master
+yarn auto release
+```
+- Set up scripts to use Auto:
+```json
+{
+  "scripts": {
+    "release": "auto shipit"
+  }
+}
+```
+- Add to CircleCI:
+```yml
+# ...
+- run: yarn test
+- run: yarn chromatic test -a 2wix88i1ziu
+- run: |
+    if [ $CIRCLE_BRANCH = "master" ]
+    then
+      yarn release
+    fi
+```
+- Add env variables to CircleCI: https://circleci.com/gh/%3Cyour-username%3E/learnstorybook-design-system/edit#env-vars
+---
+### Using the Design System in an App
+- run app's storybook:
+```
+yarn install
+yarn storybook
+```
+- add ours as a dependency:
+```
+yarn add <your-username>-learnstorybook-design-system
+```
+- add to config.js
+- add global decorator to .storybook/preview.js:
+```javascript
+import React from 'react';
+import { addDecorator } from '@storybook/react';
+import { global as designSystemGlobal } from '<your-username>-learnstorybook-design-system';
+
+const { GlobalStyle } = designSystemGlobal;
+
+addDecorator(story => (
+  <>
+    <GlobalStyle />
+    {story()}
+  </>
+));
+```
+>Showcasing the design system during feature development increases the likelihood that developers will reuse existing components instead of wasting time inventing their own.
