@@ -15,15 +15,20 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "build-storybook-docs": "build-storybook -s public --docs"
+    "build-storybook-docs": "build-storybook -s public --docs",
+    "build": "BABEL_ENV=production babel src -d dist"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "browserslist": {
     "production": [
@@ -38,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@storybook/addon-a11y": "^5.2.1",
     "@storybook/addon-actions": "^5.3.10",
     "@storybook/addon-docs": "^5.2.1",
@@ -50,5 +56,10 @@
     "auto": "^7.4.3",
     "prettier": "^1.19.1",
     "storybook-chromatic": "^3.5.1"
-  }
+  },
+  "description": "Learning Storybook design systems",
+  "main": "index.js",
+  "repository": "git@github.com:ClareBee/design-systems-storybook.git",
+  "author": "Clare <chblackburne@gmail.com>",
+  "license": "MIT"
 }

@@ -186,3 +186,28 @@ configure(
   module
 );
 ```
+
+### Distribute
+- Packaging (Common UI components, design tokens, docs)
+e.g. via npm
+1. Add README.md
+2. Add index.js as common entry point & also export design tokens/components
+3. Add dev dependency for Babel to compile JS: `yarn add --dev @babel/cli`
+4. Add build scripts:
+```json
+{
+  "scripts": {
+    "build": "BABEL_ENV=production babel src -d dist",
+      ...
+  }
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  }
+}
+```
+5. Update `package.json` to ensure all info
+e.g. w `yarn init --a` (initialises the package for publication)
+
+#### Release management with Auto
