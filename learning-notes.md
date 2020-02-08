@@ -231,6 +231,7 @@ git commit -m "Changelog for v0.1.0 [skip ci]"
 npm version 0.1.0 -m "Bump version to: %s [skip ci]"
 npm publish
 ```
+- NB: [skip ci] in your commit message to skip the CircleCI build
 - Use Auto to create a release on GitHub:
 ```
 git push --follow-tags origin master
