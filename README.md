@@ -71,7 +71,7 @@ PRs run tests and deploy -> copy deploy preview URLs for any changed components/
 - **Render components consistently** to mitigate variability
 
 #### Visual Tests
-- snapshots - using Chromatic (captures a baseline image of every story)
+- snapshots - using [Chromatic](https://docs.chromaticqa.com/) (visual testing tool for Storybook, captures a baseline image of every story)
 `yarn add --dev storybook-chromatic`
 `yarn chromatic test --app-code=<app-code>`
 
@@ -113,4 +113,76 @@ Ideal world:
 - customisable where needed
 From [Storybook](https://www.learnstorybook.com/design-systems-for-developers/react/en/document/)
 
+#### Storybook Docs & JSDoc
 `yarn add --dev @storybook/addon-docs` & add to `addons.js`
+e.g.
+```javascript
+/**
+- Use an avatar for attributing actions or content to specific users.
+- The user's name should always be present when using Avatar – either printed beside the avatar or in a tooltip.
+**/
+// also:
+sizes.story = {
+  parameters: { docs: { storyDescription: '4 sizes are supported.' } },
+};
+```
+
+#### MDX
+[MDX](https://mdxjs.com/)
+
+- lets you use JSX inside Markdown
+Enable in `config.js`:
+```javascript
+// automatically import all files ending in *.stories.js|mdx
+configure(
+  [
+    require.context('../src', false, /Intro\.stories\.mdx/),
+    require.context('../src', true, /\.stories\.(js|mdx)$/),
+  ],
+  module
+);
+```
+
+- Storybook uses built-in Doc Blocks (interactive previews, props tables etc.)
+- keep defaults by wrapping in a Preview
+```javascript
+import { Meta, Story, Props, Preview } from '@storybook/addon-docs/blocks';
+
+# …
+
+<Preview withToolbar>
+  <Story name="standard">
+    <Avatar
+      size="large"
+      username="Tom Coleman"
+      src="https://avatars2.githubusercontent.com/u/132554"
+    />
+  </Story>
+</Preview>
+
+<Props of={Avatar} />
+```
+
+#### Doc-only mdx pages
+e.g. `src/Intro.stories.mdx`
+```javascript
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Design System|Introduction" />
+
+# Introduction to the Learn Storybook design system
+
+The Learn Storybook design system is a subset of the full [Storybook design system](https://github.com/storybookjs/design-system/), created as a learning resource for those interested in learning how to write and publish a design system using best practice techniques.
+
+Learn more at [Learn Storybook](https://learnstorybook.com).
+```
+Load in first in `config.js`
+```javascript
+configure(
+  [
+    require.context('../src', false, /Intro\.stories\.mdx/),
+    require.context('../src', true, /\.stories\.(js|mdx)$/),
+  ],
+  module
+);
+```
