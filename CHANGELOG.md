@@ -1,3 +1,15 @@
+# v0.8.1 (Thu Jan 21 2021)
+
+#### 🐛  Bug Fix
+
+- Bump websocket-extensions from 0.1.3 to 0.1.4 [#7](https://github.com/ClareBee/design-systems-storybook/pull/7) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.2.0 (Sun Feb 09 2020)
 
 #### 🚀  Enhancement
