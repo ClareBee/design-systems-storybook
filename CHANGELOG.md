@@ -1,3 +1,16 @@
+# v0.8.3 (Mon Mar 22 2021)
+
+#### 🐛  Bug Fix
+
+- Bump elliptic from 6.5.3 to 6.5.4 [#13](https://github.com/ClareBee/design-systems-storybook/pull/13) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump pug-code-gen from 2.0.2 to 2.0.3 [#12](https://github.com/ClareBee/design-systems-storybook/pull/12) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.1 (Thu Jan 21 2021)
 
 #### 🐛  Bug Fix
