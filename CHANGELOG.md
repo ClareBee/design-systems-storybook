@@ -1,3 +1,15 @@
+# v0.8.5 (Thu Apr 01 2021)
+
+#### 🐛  Bug Fix
+
+- Bump y18n from 3.2.1 to 3.2.2 [#14](https://github.com/ClareBee/design-systems-storybook/pull/14) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.3 (Mon Mar 22 2021)
 
 #### 🐛  Bug Fix
