@@ -1,3 +1,15 @@
+# v0.8.7 (Tue May 11 2021)
+
+#### 🐛  Bug Fix
+
+- Bump ssri from 6.0.1 to 6.0.2 [#15](https://github.com/ClareBee/design-systems-storybook/pull/15) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.5 (Thu Apr 01 2021)
 
 #### 🐛  Bug Fix
