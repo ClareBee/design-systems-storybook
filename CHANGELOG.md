@@ -1,3 +1,15 @@
+# v0.8.9 (Sat May 15 2021)
+
+#### 🐛  Bug Fix
+
+- Bump hosted-git-info from 2.8.5 to 2.8.9 [#17](https://github.com/ClareBee/design-systems-storybook/pull/17) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.8 (Tue May 11 2021)
 
 #### 🐛  Bug Fix
