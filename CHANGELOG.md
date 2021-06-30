@@ -1,3 +1,15 @@
+# v0.8.10 (Wed Jun 30 2021)
+
+#### 🐛  Bug Fix
+
+- Bump merge-deep from 3.0.2 to 3.0.3 [#19](https://github.com/ClareBee/design-systems-storybook/pull/19) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.9 (Sat May 15 2021)
 
 #### 🐛  Bug Fix
