@@ -1,3 +1,15 @@
+# v0.8.13 (Wed Jun 30 2021)
+
+#### 🐛  Bug Fix
+
+- Bump color-string from 1.5.3 to 1.5.5 [#21](https://github.com/ClareBee/design-systems-storybook/pull/21) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.11 (Wed Jun 30 2021)
 
 #### 🐛  Bug Fix
