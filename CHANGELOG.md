@@ -1,3 +1,15 @@
+# v0.8.11 (Wed Jun 30 2021)
+
+#### 🐛  Bug Fix
+
+- Bump dns-packet from 1.3.1 to 1.3.4 [#18](https://github.com/ClareBee/design-systems-storybook/pull/18) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.10 (Wed Jun 30 2021)
 
 #### 🐛  Bug Fix
