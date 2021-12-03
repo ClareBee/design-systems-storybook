@@ -1,3 +1,15 @@
+# v0.8.15 (Fri Dec 03 2021)
+
+#### 🐛  Bug Fix
+
+- Bump path-parse from 1.0.6 to 1.0.7 [#23](https://github.com/ClareBee/design-systems-storybook/pull/23) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.13 (Wed Jun 30 2021)
 
 #### 🐛  Bug Fix
