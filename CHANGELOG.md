@@ -1,3 +1,18 @@
+# v0.8.15 (Tue Nov 01 2022)
+
+#### 🐛  Bug Fix
+
+- Bump eventsource from 1.0.7 to 1.1.1 [#32](https://github.com/ClareBee/design-systems-storybook/pull/32) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump url-parse from 1.5.1 to 1.5.3 [#25](https://github.com/ClareBee/design-systems-storybook/pull/25) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump tmpl from 1.0.4 to 1.0.5 [#24](https://github.com/ClareBee/design-systems-storybook/pull/24) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump path-parse from 1.0.6 to 1.0.7 [#23](https://github.com/ClareBee/design-systems-storybook/pull/23) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.13 (Wed Jun 30 2021)
 
 #### 🐛  Bug Fix
