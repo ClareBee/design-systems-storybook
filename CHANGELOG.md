@@ -1,3 +1,15 @@
+# v0.8.17 (Tue Nov 01 2022)
+
+#### 🐛  Bug Fix
+
+- Bump moment from 2.24.0 to 2.29.4 [#33](https://github.com/ClareBee/design-systems-storybook/pull/33) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.15 (Tue Nov 01 2022)
 
 #### 🐛  Bug Fix
