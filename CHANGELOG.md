@@ -1,3 +1,15 @@
+# v0.8.22 (Thu Dec 29 2022)
+
+#### 🐛  Bug Fix
+
+- Bump async from 2.6.3 to 2.6.4 [#31](https://github.com/ClareBee/design-systems-storybook/pull/31) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.21 (Thu Dec 29 2022)
 
 #### 🐛  Bug Fix
