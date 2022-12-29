@@ -1,3 +1,15 @@
+# v0.8.21 (Thu Dec 29 2022)
+
+#### 🐛  Bug Fix
+
+- Bump express from 4.17.1 to 4.18.2 [#37](https://github.com/ClareBee/design-systems-storybook/pull/37) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.19 (Thu Dec 29 2022)
 
 #### 🐛  Bug Fix
