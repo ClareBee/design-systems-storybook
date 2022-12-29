@@ -1,3 +1,16 @@
+# v0.8.19 (Thu Dec 29 2022)
+
+#### 🐛  Bug Fix
+
+- Bump decode-uri-component from 0.2.0 to 0.2.2 [#35](https://github.com/ClareBee/design-systems-storybook/pull/35) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump qs from 6.5.2 to 6.5.3 [#36](https://github.com/ClareBee/design-systems-storybook/pull/36) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v0.8.17 (Tue Nov 01 2022)
 
 #### 🐛  Bug Fix
